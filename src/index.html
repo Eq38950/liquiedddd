@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liquiedddd Telegram</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="backdrop-grid"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <main class="app liquidGL" aria-label="Telegram client concept">
+    <aside class="panel nav squircle">
+      <div class="brand-row">
+        <div class="avatar logo">LT</div>
+        <div>
+          <div class="eyebrow">Custom client</div>
+          <div class="brand-title">Liquiedddd</div>
+        </div>
+      </div>
+
+      <label class="search-wrap squircle">
+        <span>⌕</span>
+        <input class="search" placeholder="Поиск чатов" />
+      </label>
+
+      <div class="section-head">Чаты</div>
+      <div class="chat-list">
+        <article class="chat-item active squircle">
+          <div class="avatar gradient-1">D</div>
+          <div class="chat-copy">
+            <div class="chat-top"><strong>Design Team</strong><small>12:41</small></div>
+            <p>Liquid glass выглядит как iOS 26</p>
+          </div>
+        </article>
+        <article class="chat-item squircle">
+          <div class="avatar gradient-2">F</div>
+          <div class="chat-copy">
+            <div class="chat-top"><strong>Frontend</strong><small>11:08</small></div>
+            <p>Squircle карточки уже в работе</p>
+          </div>
+        </article>
+        <article class="chat-item squircle">
+          <div class="avatar gradient-3">A</div>
+          <div class="chat-copy">
+            <div class="chat-top"><strong>Admin</strong><small>09:22</small></div>
+            <p>Скинь exe и source code</p>
+          </div>
+        </article>
+      </div>
+    </aside>
+
+    <section class="panel main squircle">
+      <header class="topbar">
+        <div class="title-block">
+          <h1>Design Team</h1>
+          <span>28 участников • live</span>
+        </div>
+        <div class="actions">
+          <button class="icon-btn squircle">☾</button>
+          <button class="cta squircle">+ Invite</button>
+        </div>
+      </header>
+
+      <div class="hero-card squircle">
+        <div>
+          <div class="eyebrow">Liquid glass concept</div>
+          <h2>Telegram для Windows с эффектом «стекла» и сквирклов.</h2>
+        </div>
+        <div class="badge-row">
+          <span class="pill squircle">liquidGL</span>
+          <span class="pill squircle">smooth-corners</span>
+          <span class="pill squircle">Electron</span>
+        </div>
+      </div>
+
+      <div class="messages">
+        <article class="message from squircle">
+          <div class="message-meta">Nikita • 12:34</div>
+          <p>Сделал интерфейс с прозрачными панелями и глубиной.</p>
+        </article>
+        <article class="message to squircle">
+          <div class="message-meta">You • 12:35</div>
+          <p>Добавил суперэллипсы вместо обычных rounded-rectangles.</p>
+        </article>
+        <article class="message from squircle">
+          <div class="message-meta">Nikita • 12:36</div>
+          <p>Да, и оно уже выглядит как готовый desktop client.</p>
+        </article>
+      </div>
+
+      <footer class="composer squircle">
+        <button class="composer-btn">＋</button>
+        <input placeholder="Написать сообщение…" />
+        <button class="send-btn">➤</button>
+      </footer>
+    </section>
+
+    <aside class="panel info squircle">
+      <div class="section-head">Инфо</div>
+      <div class="info-card squircle">
+        <strong>Windows build</strong>
+        <p>Сборка через Electron Packager.</p>
+      </div>
+      <div class="info-card squircle">
+        <strong>UI mood</strong>
+        <p>Глянцевый, мягкий, premium.</p>
+      </div>
+      <div class="info-card squircle">
+        <strong>Assets</strong>
+        <p>.fig, source code, .exe.</p>
+      </div>
+    </aside>
+  </main>
+
+  <script src="../node_modules/html2canvas/dist/html2canvas.min.js"></script>
+  <script src="../vendor/liquidGL.js"></script>
+  <script src="renderer.js"></script>
+</body>
+</html>
