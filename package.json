@@ -1,0 +1,17 @@
+{
+  "name": "liquiedddd-telegram-client",
+  "version": "1.0.0",
+  "description": "Custom Telegram-style desktop client with liquid glass and squircle UI",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-packager . LiquieddddTelegram --platform=win32 --arch=x64 --overwrite --out=dist --prune=true"
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-packager": "^17.1.2",
+    "html2canvas": "^1.4.1",
+    "playwright": "^1.60.0",
+    "smooth-corners": "^1.0.4"
+  }
+}
